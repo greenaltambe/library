@@ -1,0 +1,31 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--light-grey: #f1f1f1;
+	--dark-grey: #333;
+}
+
+body {
+	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+		"Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.container {
+	display: grid;
+	grid-template-columns: 1fr 4fr;
+	min-height: 100vh;
+}
+
+.sidebar-container {
+	background-color: var(--dark-grey);
+	color: var(--light-grey);
+}
+
+.books-container {
+	background-color: var(--light-grey);
+	color: var(--dark-grey);
+}
