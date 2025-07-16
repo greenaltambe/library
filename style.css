@@ -40,7 +40,6 @@ body {
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
-
 .form-elements {
 	margin-bottom: var(--padding);
 	display: flex;
@@ -51,4 +50,41 @@ body {
 	display: flex;
 	flex-direction: row;
 	gap: var(--padding);
+}
+
+#books-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+	gap: var(--padding);
+	padding: var(--padding);
+}
+
+.book {
+	border: 2px solid var(--dark-grey);
+	padding: var(--padding);
+	background-color: var(--light-grey);
+	color: var(--dark-grey);
+	height: 200px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.read-container {
+	display: flex;
+}
+
+.remove-btn {
+	background-color: var(--dark-grey);
+	color: var(--light-grey);
+}
+
+#new-book,
+#add-book {
+	background-color: var(--light-grey);
+	color: var(--dark-grey);
+	width: 100%;
+	margin-bottom: var(--padding);
+	outline: none;
+	border: none;
 }
