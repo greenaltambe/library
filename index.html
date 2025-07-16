@@ -9,8 +9,33 @@
 	<body>
 		<div class="container">
 			<div class="sidebar-container">
-        <h1>Library</h1>
-				<button class="add-book">Add Book</button>
+				<h1>Library</h1>
+				<button id="new-book">New Book</button>
+				<div class="new-book-form">
+					<dialog closedby="any" id="dialog">
+						<form method="dialog">
+							<div class="form-elements">
+								<label for="title">Title</label>
+								<input type="text" name="title" id="title" />
+							</div>
+							<div class="form-elements">
+								<label for="author">Author</label>
+								<input type="text" name="author" id="author" />
+							</div>
+							<div class="form-elements">
+								<label for="pages">Pages</label>
+								<input type="number" name="pages" id="pages" />
+							</div>
+							<div class="form-elements" id="read">
+								<label for="read">Read</label>
+								<input type="checkbox" name="read" id="read" />
+							</div>
+							<button type="submit" id="add-book">
+								Add Book
+							</button>
+						</form>
+					</dialog>
+				</div>
 			</div>
 			<div class="books-container"></div>
 		</div>

@@ -7,6 +7,7 @@
 :root {
 	--light-grey: #f1f1f1;
 	--dark-grey: #333;
+	--padding: 1rem;
 }
 
 body {
@@ -23,9 +24,31 @@ body {
 .sidebar-container {
 	background-color: var(--dark-grey);
 	color: var(--light-grey);
+	padding: var(--padding);
 }
 
 .books-container {
 	background-color: var(--light-grey);
 	color: var(--dark-grey);
+}
+
+#dialog {
+	background-color: var(--dark-grey);
+	color: var(--light-grey);
+	padding: var(--padding);
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.form-elements {
+	margin-bottom: var(--padding);
+	display: flex;
+	flex-direction: column;
+}
+
+#read {
+	display: flex;
+	flex-direction: row;
+	gap: var(--padding);
 }
